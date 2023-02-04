@@ -65,6 +65,9 @@ html
 	&_fz16
 		font-size: 16px
 		line-height: 24px	
+	&_fz20
+		font-size: 20px
+		line-height: 30px	
 	&_fz36
 		font-size: 36px
 	&_fz48
@@ -77,7 +80,7 @@ html
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
 
 .divider
-	margin-top: 25px
+	margin: 25px auto 0 auto
 	width: 60px
 	height: 3px
 	background: $main-color
@@ -206,7 +209,7 @@ html
 		font-weight: 700
 		font-size: 24px
 		line-height: 36px
-		transition: 1s all
+		transition: 0.5s all
 		&:before
 			content: ""
 			position: absolute
@@ -254,6 +257,8 @@ html
 .about
 	min-height: 600px
 	padding-top: 120px
+	.divider
+		margin: 0
 	&__wrapper
 		display: grid
 		grid-template-columns: 400px 670px
@@ -303,6 +308,84 @@ html
 		line-height: 18px
 		color: #000000
 
-.useful
+.resume
 	padding-top: 120px
-		
+	&__title
+		position: relative
+		text-align: center
+		margin-bottom: 6px
+		@include before__circle
+		&:before
+			left: 50%
+			transform: translateX(-50%)
+	&__subtitle
+		text-align: center
+	&__wrapper
+		// margin-top: 60px
+		padding: 60px 65px 0 65px
+		display: grid
+		justify-content: center
+		column-gap: 135px
+		grid-template-columns: repeat(2, 425px)
+	&__column
+		position: relative
+		padding-left: 35px
+		&:after
+				position: absolute
+				content: ""
+				height: calc( 100% - 20px )
+				width: 1px
+				left: -5px
+				top: 20px
+				background: #000	
+		&-title
+			position: relative
+			&:before
+				position: absolute
+				content: ""
+				height: 15px
+				width: 15px
+				border-radius: 100%
+				left: -47px
+				top: 50%
+				transform: translateY(-50%)
+				background-color: $main-color
+		ul
+			margin-top: 45px
+			margin-bottom: 0
+			padding: 0
+			list-style-type: none
+			li
+				position: relative
+				margin-bottom: 45px
+				&:last-child
+					margin-bottom: 0
+				&:after
+					position: absolute
+					content: ""
+					width: 40px
+					height: 1px
+					top: 17px
+					left: -40px
+					background: #000	
+	&__item
+		max-width: 375px
+		&-icon
+			position: relative
+			padding: 8px 15px 0 15px
+			@include before__circle
+		&-location
+			font-weight: 500
+			font-size: 12px
+			line-height: 18px
+		h4 
+		&-head
+			display: flex	
+			align-items: center
+		&-body
+			margin-top: 11px
+			font-weight: 500
+			font-size: 12px
+			line-height: 18px
+.skills
+	padding-top: 120px		
