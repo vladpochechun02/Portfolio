@@ -18,3 +18,4 @@ for (let item of links) {
     })
 }
 
+new WOW().init();

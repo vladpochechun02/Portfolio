@@ -45,6 +45,7 @@
     
     <!-- Including -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -78,7 +79,7 @@
                 <ul class="menu__list">
                     <li class="menu__link"><a href="#about-s">ПРО МЕНЯ</a></li>
                     <li class="menu__link"><a href="#resume-s">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#skills-s">МОИ НАВЫКИ</a></li>
                     <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
                     <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
                     <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
@@ -186,7 +187,7 @@
         </div>
     </section>
 
-    <!-- Third section -->
+    <!-- Third section  wow animate__fadeInUp animate__animated -->
     <section id="resume-s" class="resume">
         <div class="container">
             <h2 class="title title_fz16 resume__title">Опыт</h2>
@@ -292,12 +293,138 @@
     <!-- Fourth section -->
     <section id="skills-s" class="skills">
         <div class="container">
-            <h2 class="title title_fz16 skills__circle">Опыт</h2>
-            <div class="title title_fz36 skills__title">Чем я буду полезен</div>
+            <h2 class="title title_fz16 skills__title">Навыки</h2>
+            <div class="title title_fz36 skills__subtitle">Что я использую в работе</div>
             <div class="divider"></div>
+            <!-- Грид сетка -->
+            <div class="skills__info">
+                <div class="skills__elem">
+                    <div class="skills__elem-img">
+                        <img src="icons/skills/html5.svg" alt="">
+                    </div>
+                    <div class="skills__elem-name">HTML5</div>
+                    <div class="skills__elem-descr">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
+                </div>
+                <div class="skills__elem">
+                    <div class="skills__elem-img">
+                        <img src="icons/skills/css3.svg" alt="">
+                    </div>
+                    <div class="skills__elem-name">CSS3</div>
+                    <div class="skills__elem-descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
+                </div>
+                <div class="skills__elem">
+                    <div class="skills__elem-img">
+                        <img src="icons/skills/js.svg" alt="">
+                    </div>
+                    <div class="skills__elem-name">Java Script</div>
+                    <div class="skills__elem-descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+                </div>
+                <div class="skills__elem">
+                    <div class="skills__elem-img">
+                        <img src="icons/skills/jquery.svg" alt="">
+                    </div>
+                    <div class="skills__elem-name">Jquery</div>
+                    <div class="skills__elem-descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
+                </div>
+                <div class="skills__elem">
+                    <div class="skills__elem-img">
+                        <img src="icons/skills/react.svg" alt="">
+                    </div>
+                    <div class="skills__elem-name">React</div>
+                    <div class="skills__elem-descr">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
+                </div>
+                <div class="skills__elem">
+                    <div class="skills__elem-img">
+                        <img src="icons/skills/node.js.svg" alt="">
+                    </div>
+                    <div class="skills__elem-name">Node.js</div>
+                    <div class="skills__elem-descr">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
+                </div>
+                <div class="skills__elem">
+                    <div class="skills__elem-img">
+                        <img src="icons/skills/mongo.db.svg" alt="">
+                    </div>
+                    <div class="skills__elem-name">Mongo.db</div>
+                    <div class="skills__elem-descr">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
+                </div>
+            </div>
+            <!-- процентные скиллы -->
+            <div class="skills__creating">
+                <div class="skills__creating-elem">
+                    <div class="skills__creating-info">
+                        <h2 class="title title_fz14 skills__creating-title">
+                            Создание сайтов
+                        </h2>
+                        <div class="skills__creating-percent">100%</div>
+                    </div>
+                    <div class="skills__creating-outline">
+                        <div class="skills__creating-inline" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="skills__creating-elem">
+                    <div class="skills__creating-info">
+                        <h2 class="title title_fz14 skills__creating-title">
+                            Создание приложений
+                        </h2>
+                        <div class="skills__creating-percent">85%</div>
+                    </div>
+                    <div class="skills__creating-outline">
+                        <div class="skills__creating-inline" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skills__creating-elem">
+                    <div class="skills__creating-info">
+                        <h2 class="title title_fz14 skills__creating-title">
+                            Работа с данными
+                        </h2>
+                        <div class="skills__creating-percent">90%</div>
+                    </div>
+                    <div class="skills__creating-outline">
+                        <div class="skills__creating-inline" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skills__creating-elem">
+                    <div class="skills__creating-info">
+                        <h2 class="title title_fz14 skills__creating-title">
+                            Креативность
+                        </h2>
+                        <div class="skills__creating-percent">75%</div>
+                    </div>
+                    <div class="skills__creating-outline">
+                        <div class="skills__creating-inline" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skills__creating-elem">
+                    <div class="skills__creating-info">
+                        <h2 class="title title_fz14 skills__creating-title">
+                            Создание дизайна
+                        </h2>
+                        <div class="skills__creating-percent">90%</div>
+                    </div>
+                    <div class="skills__creating-outline">
+                        <div class="skills__creating-inline" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skills__creating-elem">
+                    <div class="skills__creating-info">
+                        <h2 class="title title_fz14 skills__creating-title">
+                            Soft skills
+                        </h2>
+                        <div class="skills__creating-percent">95%</div>
+                    </div>
+                    <div class="skills__creating-outline">
+                        <div class="skills__creating-inline" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- My works -->
+    <section class="works">
 
+    </section>
+
+    <script src="js/wow.min.js"></script>
     <script src="js/js.js"></script>
 </body>
 </html>
