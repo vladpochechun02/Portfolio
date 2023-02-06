@@ -18,4 +18,11 @@ for (let item of links) {
     })
 }
 
+const percents = document.querySelectorAll('.skills__creating-percent'),
+      lines = document.querySelectorAll('.skills__creating-line span');
+
+percents.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
+
 new WOW().init();
