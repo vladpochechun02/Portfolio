@@ -1,0 +1,619 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face{
+    font-family: 'Roboto!';
+    src: local('Roboto');
+    src:url(../fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.promo{
+    height: 870px;
+    background: url(../img/background-fon-1.png) center center/cover no-repeat;
+    padding: 40px 0 60px 0;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo .logo-img{
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo-img:hover{
+    cursor: pointer;
+}
+
+.logo .logo-text{
+    color: #ffffff;
+    font-family: 'Roboto!';
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.title{
+    color: #F9BF3B;
+    text-transform: uppercase;
+    font-family: 'Roboto!';
+    font-weight: 900;
+    font-size: 41px;
+    text-align: center;
+}
+
+.simple .title-big{
+    font-family: 'Roboto!';
+    font-weight: 900;
+    font-size: 80px;
+    /* or 100% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+h1{
+    margin-top: 53px;
+}
+
+h2.title{
+    margin: 15px auto 0 auto;
+}
+
+.promo .promo-text{
+    padding: 0 13px;
+    margin-top: 23px;
+    text-align: center;
+    font-family: 'Roboto!';
+    color:#FFFFFF;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+.promo .promo-text span{
+    font-family: 'Roboto!';
+    color:#F9BF3B;
+    font-weight: 700;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.promo .promo-btn, .present .present-btn{
+    width: 313px;
+    height: 72px;
+    border: 3px solid rgba(0, 0, 0, 0.18);  
+    background: linear-gradient(to top, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Roboto!';
+    cursor:pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    /* outline: none; */
+}
+
+.promo .promo-btn:hover, .present .present-btn:hover{
+    transition: 2000ms;
+    background: linear-gradient(0deg, #0bc6ff 0%, #2798B9 100%);
+    color: rgb(0, 0, 0);
+}
+
+.more .more-text{
+    margin-top: 70px;
+    text-transform: uppercase;
+    color: #ffffffa1;
+    font-family: 'Roboto!';
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+}
+
+.more .more-img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: 0.5s all;
+}
+
+.more .more-img:hover{
+    transition: 0.5s all;
+    transform: translateY(3px);
+    /* border: 2px solid rgba(0, 0, 0, 0.18);  */
+}
+
+.waiting{
+    background: #EFEFEF;
+    min-height: 604px;
+    padding: 85px 0 75px 0;
+}
+
+.waiting .waiting-header{
+    font-family: 'Roboto!';
+    font-size: 30px;
+    /* or 100% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.waiting .waiting-divider{
+    width: 220px;
+    background: #F9BF3B;
+    border: 4px solid #F9BF3B;
+    margin: 18px auto;
+}
+
+.waiting .waiting-subheader{
+    font-family: 'Roboto!';
+    font-size: 23px;
+    /* identical to box height, or 87% */
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.waiting .waiting-wrapper{
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.waiting .waiting-wrapper .waiting-item{
+    width: 347px;
+    text-align: center;
+}
+
+.waiting .waiting-wrapper .waiting-item .waiting-img{
+    width: 100%;
+}
+
+.waiting .waiting-wrapper .waiting-item .waiting-descr{
+    margin-top: 26px;
+    font-family: 'Roboto!';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    /* or 140% */
+    color: #4A4A4A;
+}
+
+.optimization{
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+.optimization .optimization-header{
+    margin-left: 391px;
+    font-family: 'Roboto!';
+    font-weight: 700;
+    font-size: 30px;
+    /* align-items: right; */
+    /* identical to box height, or 100% */
+    text-transform: uppercase;
+    color: #299CBD;
+}
+
+.optimization .optimization-text{
+    margin-top: 25px;
+    margin-left: 391px;
+    font-family: 'Roboto!';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    /* or 159% */
+    color: #4A4A4A;
+}
+
+.optimization .optimization-text span{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 27px;
+    color: #4A4A4A;
+}
+
+.optimization .optimization-img{
+    position: absolute;
+    left: -230px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.finish{
+    padding: 86px 0 78px 0;
+    min-height: 450px;
+    background: url(../img/section-4-background.png) center center/cover scroll no-repeat;
+}
+
+.finish .text{
+    font-family: 'Roboto!';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    /* or 100% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #EFEFEF;
+}
+
+.finish .finish-divider{
+    width: 220px;
+    background: #F9BF3B;
+    border: 4px solid #F9BF3B;
+    margin: 18px auto;
+}
+
+.finish .finish-wrapper{
+    margin-top: 41px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*выровнять по центру кружки с контентом */
+}
+
+.finish .finish-wrapper .finish-item{
+    width: 204px;
+}
+
+.finish .finish-wrapper .finish-circle{
+    display: flex;
+    justify-content: center; /*Что бы картинка была в центре кружка */
+    align-items: center; /*Что б картинка стало норм размера*/
+    height: 118px;
+    width: 118px;
+    background: #B4E2FF;
+    border-radius: 100%;
+    margin: 0 auto; /*Что бы кругляшки были по центру относительно текста */
+}
+
+.finish .finish-wrapper .finish-item .finish-descr{
+    margin-top: 24px;
+    font-family: 'Roboto!';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    /* or 118% */
+    text-align: center;
+    color: #EFEFEF;
+}
+
+.present{
+    min-height: 630px;
+    padding: 88px 0;
+    background: #EFEFEF;
+}
+
+.present .present-img{
+    display: block;
+    margin: 0 auto;
+}
+
+.present .present-text{
+    margin-top: 45px;
+    font-family: 'Roboto!';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    /* or 143% */
+    text-align: center;
+    color: #252525;
+}
+
+.vebinar{
+    min-height: 512px;
+    padding: 89px 0 52px 0;
+}
+
+.vebinar .vebinar-img{
+    display: block;
+    margin: 0 auto;
+}
+
+.vebinar .vebinar-header{
+    margin-top: 36px;
+    font-family: 'Roboto!';
+    font-weight: 400;
+    font-size: 30px;
+    /* identical to box height, or 100% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.vebinar .vebinar-big-text{
+    margin-top: 30px;
+    font-family: 'Roboto!';
+    font-weight: 900;
+    font-size: 36px;
+    /* or 100% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+}
+
+.vebinar .vebinar-text{
+    margin-top: 25px;
+    font-family: 'Roboto!';
+    font-weight: 400;
+    font-size: 23px;
+    /* identical to box height, or 87% */
+    text-align: center;
+    color: #4A4A4A;
+}
+
+footer{
+    min-height: 169px;
+    background: #1A1A1A;
+    padding: 60px 0;
+    text-align: center;
+    color: #888888;
+}
+
+footer a{
+    font-family: 'Roboto!';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #888888;
+}
+
+footer .call-us{
+    margin-top: 10px;
+}
+
+@media (max-width: 1199px) {
+    .container{
+        width: 960px;
+    }  
+    .promo{
+        height: 820px;
+    }
+    .title{
+        font-size: 37px;
+    }
+    .simple .title-big{
+        font-size: 60px;
+    }
+    .promo .promo-btn, .present .present-btn {
+        width: 273px;
+        height: 72px;
+        font-size: 18px;
+    }
+    .waiting .waiting-wrapper{
+        margin-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .waiting .waiting-wrapper .waiting-item {
+        width: 347px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .waiting .waiting-wrapper .waiting-item:last-child {
+        margin-bottom: 0;
+    }
+    .optimization .optimization-text{
+        width: 540px;
+    }
+    .finish .finish-wrapper {
+        justify-content: space-evenly;
+    }
+    .finish .finish-wrapper .finish-item:last-child{
+        margin-top: 20px;
+    } 
+    .present .present-text {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container{
+        width: 720px;
+    }  
+    .optimization .optimization-img {
+        display: none;  
+    }
+    .optimization .optimization-header{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .optimization .optimization-text {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .present .present-text {
+        font-size: 23px;
+    }
+    .promo .promo-btn:hover, .present .present-btn:hover{
+        transition: 2000ms;
+        background: linear-gradient(to top, #2798B9 0%, #3AB6DA 100%);
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        width: 540px;
+    }  
+    .promo{
+        height: 840px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .simple .title-big{
+        font-size: 40px;
+    }
+    .promo .promo-text {
+        font-size: 19px;
+    }
+    .promo .promo-btn, .present .present-btn {
+        margin-top: 60px;
+        width: 230px;
+        height: 52px;
+        font-size: 15px;
+    }
+    .more .more-text {
+        margin-top: 60px;
+    }
+    .waiting .waiting-subheader{
+        font-size: 20px;    
+    }
+    .optimization .optimization-text{
+        width: 95%;
+        font-size: 16px;
+    }
+    .optimization .optimization-text span{
+        font-size: 16px;
+    }
+    .finish .finish-wrapper .finish-item{
+        margin-bottom: 30px;
+    }
+    .finish .finish-wrapper .finish-item:last-child{
+        margin: 0;
+    }
+    .present .present-text {
+        font-size: 18px;
+    }
+    .vebinar .vebinar-header{
+        font-size: 26px;
+    }
+    .vebinar .vebinar-big-text{
+        font-size: 30px;
+    }
+    .vebinar .vebinar-big-text{
+        font-size: 22px;
+    }
+    footer a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container{
+        width: 98%;
+    }  
+    .vebinar .vebinar-img{
+        width: 90%;
+    }
+    .promo{
+        height: 840px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    h2.title {
+        width: 293px;
+    }
+    .simple .title-big{
+        font-size: 30px;
+    }
+    .promo .promo-text {
+        font-size: 16px;
+    }
+    .promo .promo-btn, .present .present-btn {
+        margin-top: 60px;
+        width: 230px;
+        height: 52px;
+        font-size: 15px;
+    }
+    .more .more-text {
+        margin-top: 50px;
+    }
+    h2.title {
+        margin-top: 15px;
+        width: 293px;
+    }
+    .waiting{
+        padding: 50px 0
+    }
+    .waiting .waiting-header {
+        font-size: 22px;
+    }
+    .waiting .waiting-divider{
+        border: 2px solid #F9BF3B
+    }
+    .waiting .waiting-wrapper .waiting-item .waiting-img {
+        width: 95%;
+    }
+    .waiting .waiting-subheader {
+        font-size: 17px;
+    }
+    .waiting .waiting-wrapper .waiting-item .waiting-descr {
+        font-size: 14px;
+        width: 300px;
+    }
+    .optimization {
+        padding: 50px 0;
+    }
+    .optimization .optimization-header {
+        width: 300px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .optimization .optimization-text {
+        width: 90%;
+        font-size: 15px;
+    }
+    .optimization .optimization-text span {
+        font-size: 15px;
+    }
+    .finish {
+        padding: 50px 0;
+    }
+    .finish .finish-divider {
+        border: 2px solid #F9BF3B;
+    }
+    .finish .text {
+        font-size: 22px;
+    }
+    .finish .finish-wrapper .finish-item .finish-descr {
+        font-size: 15px;
+    }
+    .present {
+        padding: 50px 0;
+        background: #EFEFEF;
+    }
+    .present .present-text {
+        line-height: 30px;
+        font-size: 17px;
+    }
+    .vebinar {
+        padding: 50px 0;
+    }
+    .vebinar .vebinar-header{
+        font-size: 22px;
+    }
+    .vebinar .vebinar-big-text {
+        font-size: 20px;
+    }
+    .vebinar .vebinar-text {
+        font-size: 18px;
+    }
+    footer {
+        min-height: 100px;
+        padding: 20px 0;
+    }
+}
