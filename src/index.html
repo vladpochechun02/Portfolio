@@ -132,7 +132,7 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="My photo">
+                    <img src="img/village1.png" alt="My photo">
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__circle">Про меня</h2>
@@ -194,6 +194,7 @@
             <div class="title title_fz36 resume__subtitle">Чем я буду полезен</div>
             <div class="divider"></div>
             <div class="resume__wrapper">
+                
                 <!-- 1 column -->
                 <div class="resume__column">
                     <h2 class="title title_fz20 resume__column-title">Образование</h2>
@@ -240,6 +241,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <!-- 2 column -->
                 <div class="resume__column">
                     <h2 class="title title_fz20 resume__column-title">Опыт работы</h2>
@@ -296,6 +298,7 @@
             <h2 class="title title_fz16 skills__title">Навыки</h2>
             <div class="title title_fz36 skills__subtitle">Что я использую в работе</div>
             <div class="divider"></div>
+
             <!-- Грид сетка -->
             <div class="skills__info">
                 <a href="https://uk.wikipedia.org/wiki/HTML5" target="_blank" class="skills__elem">
@@ -348,6 +351,7 @@
                     <div class="skills__elem-descr">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
                 </a>
             </div>
+
             <!-- процентные скиллы -->
             <div class="skills__creating">
                 <div class="skills__creating-elem">
@@ -426,6 +430,7 @@
             <h2 class="title title_fz16 portfolio__title">Портфолио</h2>
             <div class="title title_fz36 portfolio__subtitle">Мои работы</div>
             <div class="divider"></div>
+
             <!-- Grid -->
             <div class="portfolio__wrapper">
                 <a href="Uber_step_3/src/" class="portfolio__elem" target="_blank">
@@ -456,6 +461,7 @@
             <h2 class="title title_fz16 portfolio__title">Прайс-лист</h2>
             <div class="divider"></div>
             <div class="price__wrapper">
+
                 <!-- first column -->
                 <div class="price__elem">
                     <div class="price__elem-name">Landing-page</div>
@@ -472,6 +478,7 @@
                     <div>от 6000 грн.</div>
                     <div class="price__elem-descr">Инструмент для ваших продаж в сети</div>
                 </div>
+
                 <!-- second column -->
                 <div class="price__elem">
                     <div class="price__elem-name">Web-приложение</div>
@@ -497,7 +504,7 @@
         <div class="container">
             <div class="contact__wrapper">
                 <div class="contact__photo">
-                    <img src="img/beach.jpg" alt="My photo">
+                    <img src="img/main_photo.jpg" alt="My photo">
                 </div>
                 <div class="contact__descr">
                     <h2 class="title title_fz16 contact__circle">Контакты</h2>
@@ -506,11 +513,53 @@
                     <p class="contact__text">
                         Любым удобным для вас способом:
                     </p>
+                    <div class="contact__socials">
+                        <a class="contact__link" href="" target="_blank">
+                            <img src="icons/social/facebook.png" alt="">
+                        </a>
+                        <a class="contact__link" href="https://t.me/ladislaus_v" target="_blank">
+                            <img src="icons/social/telegram.png" alt="">
+                        </a>
+                        <a class="contact__link" href="" target="_blank">
+                            <img src="icons/social/instagram.png" alt="">
+                        </a>
+                    </div>
+                        <p class="contact__text">
+                            Или оставьте ваши данные и я сама вам напишу:
+                        </p>
+                    <form action="#" class="contact__form">
+                        <div class="contact__input">
+                            <input required name="name" id="name" type="text">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contact__input">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Ваш почта</label>
+                        </div>
+                        <div class="contact__textarea">
+                            <textarea name="text" id="message"></textarea>
+                            <label for="message">Ваше сообщение</label>
+                        </div>
+
+                        <div class="contact__triggers">
+                            <button class=" btn contact__btn">Отправить сообщение</button>
+                            <div class="contact__policy">
+                                <input required type="checkbox" class="contact__check"> 
+                                <span>Я согласен(а) с 
+                                    <a href="policy.html" target="_blank">
+                                        политикой конфиденциальности
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+                
             </div>
         </div>
     </section>
 
+    <!-- Scripts -->
     <script src="js/wow.min.js"></script>
     <script src="js/js.js"></script>
 </body>
