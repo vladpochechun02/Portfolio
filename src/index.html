@@ -515,7 +515,7 @@
                         <p class="contact__text">
                             Или оставьте ваши данные и я сам вам напишу:
                         </p>
-                    <form action="#" class="contact__form">
+                    <form id="message-form" action="#" class="contact__form">
                         <div class="contact__input">
                             <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
@@ -530,11 +530,11 @@
                         </div>
 
                         <div class="contact__triggers">
-                            <button class=" btn contact__btn">Отправить сообщение</button>
+                            <button class="btn contact__btn">Отправить сообщение</button>
                             <div class="contact__policy">
                                 <input required type="checkbox" class="contact__check" id="check"> 
                                 <span>Я согласен(а) с 
-                                    <a href="policy.html" target="_blank">
+                                    <a href="https://tilda.cc/ru/privacy/" target="_blank">
                                         политикой конфиденциальности
                                     </a>
                                 </span>
@@ -548,7 +548,8 @@
     </section>
 
     <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
