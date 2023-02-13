@@ -44,6 +44,11 @@
 			column-gap: 50px
 		&__form
 			grid-template-columns: repeat(2, 210px)
+	.scroll-bar
+		height: 40px
+		width: 40px
+		bottom: 50px
+		right: 45px
 	
 
 @media (max-width: 991px) 
@@ -159,6 +164,9 @@
 			img
 				&:hover
 					transform: scale(1)
+	.scroll-bar
+		bottom: 40px
+		right: 35px
 
 @media (max-width: 767px) 
 	.container
@@ -169,7 +177,7 @@
 			width: 320px
 			line-height: 39px
 	.about
-		padding: 70px 0
+		padding-top: 70px
 		&__photo
 			grid-row-start: 1
 			margin: 0 auto
@@ -192,14 +200,14 @@
 			&-text
 				width: 180px
 	.resume
-		padding-bottom: 70px
+		padding-top: 70px
 		&__subtitle
 			font-size: 30px
 		&__wrapper
 			grid-template-columns: 400px
 			row-gap: 40px
 	.skills
-		padding-bottom: 70px
+		padding-top: 70px
 		&__subtitle
 			font-size: 30px
 		&__creating
@@ -208,7 +216,7 @@
 			&-line 
 				width: 350px
 	.portfolio
-		padding-bottom: 70px
+		padding-top: 70px
 		&__subtitle
 			font-size: 30px
 		&__wrapper
@@ -222,11 +230,11 @@
 				grid-column: 1
 				grid-row: 4	
 	.price
-		padding-bottom: 70px
+		padding-top: 70px
 		&__wrapper
 			grid-template-columns: 341px
 	.contact
-		padding-bottom: 70px
+		padding-top: 70px
 		.title_fz36
 			font-size: 30px
 		&__triggers
@@ -236,6 +244,9 @@
 			grid-template-columns: 530px
 		&__form
 			grid-template-columns: repeat(2, 220px)
+	.scroll-bar
+		bottom: 35px
+		right: 35px
 						
 	
 @media (max-width: 575px) 
@@ -269,7 +280,7 @@
 		right: 20px
 		top: 20px
 	.about
-		padding: 40px 0 45px 0
+		padding-top: 40px
 		.title_fz36
 			font-size: 24px
 			// line-height: 36px
@@ -297,7 +308,7 @@
 		&__text
 			min-width: 310px
 	.resume
-		padding-bottom: 45px
+		padding-top: 40px
 		&__subtitle
 			font-size: 24px
 			line-height: 36px
@@ -305,7 +316,7 @@
 			padding: 35px 0 0 0
 			grid-template-columns: 280px
 	.skills
-		padding-bottom: 70px
+		padding-top: 40px
 		&__subtitle
 			font-size: 24px
 			line-height: 36px
@@ -321,12 +332,12 @@
 			&-line 
 				width: 290px
 	.portfolio
-		padding-bottom: 45px
+		padding-top: 40px
 		&__subtitle
 			font-size: 24px
 			line-height: 36px
 	.price
-		padding-bottom: 45px
+		padding: 40px 0 20px 0
 		&__wrapper
 			padding-top: 30px
 			padding-left: 5px
@@ -339,7 +350,7 @@
 			gap: 0px
 			grid-template: 40px 18px/170px 90px
 	.contact
-		padding-bottom: 40px
+		padding: 40px 0
 		.title_fz36
 			font-size: 24px
 		&__triggers
@@ -369,5 +380,9 @@
 			a
 				&:hover
 					text-decoration: none
+	.scroll-bar
+		bottom: 40px
+		right: 30px
+	
 	
 			

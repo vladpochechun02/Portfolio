@@ -45,20 +45,19 @@
     
     <!-- Including -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <!-- Left Social panel -->
     <aside class="sidepanel">
         <div class="sidepanel__text">Социальные сети</div>
         <div class="sidepanel__line"></div>
         <div class="sidepanel__social">
-            <a href="" class="sidepanel__link">
-                <img src="icons/social/github.svg" alt="Git" class="sidepanel__item">
+            <a href="https://github.com/vladpochechun02?tab=repositories" target="_blank" class="sidepanel__link">
+                <img src="icons/social/github.svg" alt="GitHub" class="sidepanel__item">
             </a>
-            <a href="" class="sidepanel__link">
+            <a href="https://www.instagram.com/ladislaus_v/" class="sidepanel__link" target="_blank">
                 <img src="icons/social/instagram.svg" alt="Instagram" class="sidepanel__item">
             </a>
             <a href="https://www.facebook.com/profile.php?id=100027122983561" target="_blank" class="sidepanel__link">
@@ -66,6 +65,11 @@
             </a>
         </div>
     </aside>
+
+    <!-- Scroll -->
+    <a href="#promo-s" class="scroll-bar">
+        <img src="icons/up.svg" alt="Up">
+    </a>
 
     <!-- MENU -->
     <div class="menu">
@@ -85,10 +89,10 @@
                     <li class="menu__link"><a href="#contact-s">КОНТАКТЫ</a></li>
                 </ul>
                 <div class="menu__social">
-                    <a href="">
+                    <a href="https://github.com/vladpochechun02?tab=repositories" target="_blank">
                         <img src="icons/social/github.svg" alt="Git" class="menu__item">
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/ladislaus_v/" target="_blank">
                         <img src="icons/social/instagram.svg" alt="Instagram" class="menu__item">
                     </a>
                     <a href="https://www.facebook.com/profile.php?id=100027122983561" target="_blank">
@@ -101,13 +105,13 @@
     </div>
 
     <!-- First section and HUMBURGER -->
-    <section class="promo">
+    <section id="promo-s" class="promo">
         <div class="humburger">
             <span></span>
             <span class="long"></span>
             <span></span>
         </div>
-        <div class="container">
+        <div class="container animate__bounce animate__animated">
             <h2 class="title title_fz16 promo__circle">
                 Меня зовут Владислав Почечун
             </h2>
@@ -116,28 +120,28 @@
                 из города Харьков
             </h1>
             <div class="promo__btns">
-                <a href="#portfolio-s" class="promo__link btn">Портфолио</a>
-                <a href="#about-s" class="promo__link">Про меня</a>
+                <a href="#portfolio-s" class="promo__link btn wow animate__bounce animate__animated" data-wow-delay="1s">Портфолио</a>
+                <a href="#about-s" class="promo__link wow animate__bounce animate__animated" data-wow-delay="1.6s">Про меня</a>
             </div>
         </div>
     </section>
 
     <!-- Second section -->
     <section id="about-s" class="about">
-        <div class="container">
+        <div class="container wow animate__animated animate__fadeIn">
             <div class="about__wrapper">
-                <div class="about__photo">
+                <div class="about__photo wow animate__fadeIn animate__animated">
                     <img src="img/2.jpg" alt="My photo">
                 </div>
-                <div class="about__descr">
-                    <h2 class="title title_fz16 about__circle">Про меня</h2>
-                    <div class="title title_fz36">Меня зовут Владислав</div>
+                <div class="about__descr wow animate__fadeIn animate__animated">
+                    <h2 class="title title_fz16 about__circle wow animate__jackInTheBox animate__animated">Про меня</h2>
+                    <div class="title title_fz36 wow animate__zoomInDown animate__animated">Меня зовут Владислав</div>
                     <div class="divider"></div>
                     <p class="about__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                     </p>
                 </div>
-                <div class="about__skills">
+                <div class="about__skills wow animate__fadeIn animate__animated">
                     <div class="about__skill">
                         <div class="about__skill-circle">
                             <img src="icons/about_me/web_development.svg" alt="computer">
@@ -182,15 +186,15 @@
         </div>
     </section>
 
-    <!-- Third section  wow animate__fadeInUp animate__animated -->
+    <!-- Third section  -->
     <section id="resume-s" class="resume">
-        <div class="container">
-            <h2 class="title title_fz16 resume__title">Опыт</h2>
-            <div class="title title_fz36 resume__subtitle">Чем я буду полезен</div>
+        <div class="container wow animate__fadeIn animate__animated">
+            <h2 class="title title_fz16 resume__title wow animate__jackInTheBox animate__animated">Опыт</h2>
+            <div class="title title_fz36 resume__subtitle wow animate__zoomInDown animate__animated">Чем я буду полезен</div>
             <div class="divider"></div>
             <div class="resume__wrapper">
                 
-                <div class="resume__column">
+                <div class="resume__column wow animate__fadeIn animate__animated" data-wow-delay="0.3s">
                     <h2 class="title title_fz20 resume__column-title">Образование</h2>
                     <ul>
                         <li>
@@ -236,7 +240,7 @@
                     </ul>
                 </div>
 
-                <div class="resume__column">
+                <div class="resume__column wow animate__fadeIn animate__animated" data-wow-delay="0.3s">
                     <h2 class="title title_fz20 resume__column-title">Опыт работы</h2>
                     <ul>
                         <li>
@@ -287,55 +291,55 @@
 
     <!-- Fourth section -->
     <section id="skills-s" class="skills">
-        <div class="container">
-            <h2 class="title title_fz16 skills__title">Навыки</h2>
-            <div class="title title_fz36 skills__subtitle">Что я использую в работе</div>
+        <div class="container wow animate__fadeIn animate__animated">
+            <h2 class="title title_fz16 skills__title wow animate__jackInTheBox animate__animated">Навыки</h2>
+            <div class="title title_fz36 skills__subtitle wow animate__zoomInDown animate__animated">Что я использую в работе</div>
             <div class="divider"></div>
 
             <div class="skills__info">
-                <a href="https://uk.wikipedia.org/wiki/HTML5" target="_blank" class="skills__elem">
+                <a href="https://uk.wikipedia.org/wiki/HTML5" target="_blank" class="skills__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__elem-img">
                         <img src="icons/skills/html5.svg" alt="html5">
                     </div>
                     <div class="skills__elem-name">HTML5</div>
                     <div class="skills__elem-descr">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
                 </a>
-                <a href="https://uk.wikipedia.org/wiki/CSS" target="_blank" class="skills__elem">
+                <a href="https://uk.wikipedia.org/wiki/CSS" target="_blank" class="skills__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__elem-img">
                         <img src="icons/skills/css3.svg" alt="css3">
                     </div>
                     <div class="skills__elem-name">CSS3</div>
                     <div class="skills__elem-descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
                 </a>
-                <a href="https://uk.wikipedia.org/wiki/JavaScript" target="_blank" class="skills__elem">
+                <a href="https://uk.wikipedia.org/wiki/JavaScript" target="_blank" class="skills__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__elem-img">
                         <img src="icons/skills/js.svg" alt="js">
                     </div>
                     <div class="skills__elem-name">Java Script</div>
                     <div class="skills__elem-descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
                 </a>
-                <a href="https://uk.wikipedia.org/wiki/JQuery" target="_blank" class="skills__elem">
+                <a href="https://uk.wikipedia.org/wiki/JQuery" target="_blank" class="skills__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__elem-img">
                         <img src="icons/skills/jquery.svg" alt="jquery">
                     </div>
                     <div class="skills__elem-name">Jquery</div>
                     <div class="skills__elem-descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
                 </a>
-                <a href="https://uk.wikipedia.org/wiki/React" target="_blank" class="skills__elem">
+                <a href="https://uk.wikipedia.org/wiki/React" target="_blank" class="skills__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__elem-img">
                         <img src="icons/skills/react.svg" alt="react">
                     </div>
                     <div class="skills__elem-name">React</div>
                     <div class="skills__elem-descr">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
                 </a>
-                <a href="https://uk.wikipedia.org/wiki/Node.js" target="_blank" class="skills__elem">
+                <a href="https://uk.wikipedia.org/wiki/Node.js" target="_blank" class="skills__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__elem-img">
                         <img src="icons/skills/node.js.svg" alt="node.js">
                     </div>
                     <div class="skills__elem-name">Node.js</div>
                     <div class="skills__elem-descr">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
                 </a>
-                <a href="https://uk.wikipedia.org/wiki/MongoDB" target="_blank" class="skills__elem">
+                <a href="https://uk.wikipedia.org/wiki/MongoDB" target="_blank" class="skills__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__elem-img">
                         <img src="icons/skills/mongo.db.svg" alt="mongo.db">
                     </div>
@@ -345,7 +349,7 @@
             </div>
 
             <div class="skills__creating">
-                <div class="skills__creating-elem">
+                <div class="skills__creating-elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__creating-info">
                         <h2 class="title title_fz14 skills__creating-title">
                             Создание сайтов
@@ -356,7 +360,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="skills__creating-elem">
+                <div class="skills__creating-elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__creating-info">
                         <h2 class="title title_fz14 skills__creating-title">
                             Создание приложений
@@ -367,7 +371,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="skills__creating-elem">
+                <div class="skills__creating-elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__creating-info">
                         <h2 class="title title_fz14 skills__creating-title">
                             Работа с данными
@@ -378,7 +382,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="skills__creating-elem">
+                <div class="skills__creating-elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__creating-info">
                         <h2 class="title title_fz14 skills__creating-title">
                             Креативность
@@ -389,7 +393,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="skills__creating-elem">
+                <div class="skills__creating-elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__creating-info">
                         <h2 class="title title_fz14 skills__creating-title">
                             Создание дизайна
@@ -400,7 +404,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="skills__creating-elem">
+                <div class="skills__creating-elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="skills__creating-info">
                         <h2 class="title title_fz14 skills__creating-title">
                             Soft skills
@@ -417,28 +421,28 @@
 
     <!-- My Portfolio -->
     <section id="portfolio-s" class="portfolio">
-        <div class="container">
-            <h2 class="title title_fz16 portfolio__title">Портфолио</h2>
-            <div class="title title_fz36 portfolio__subtitle">Мои работы</div>
+        <div class="container wow animate__fadeIn animate__animated">
+            <h2 class="title title_fz16 portfolio__title wow animate__jackInTheBox animate__animated">Портфолио</h2>
+            <div class="title title_fz36 portfolio__subtitle wow animate__zoomInDown animate__animated">Мои работы</div>
             <div class="divider"></div>
 
             <div class="portfolio__wrapper">
-                <a href="Uber_step_3/src/" class="portfolio__elem" target="_blank">
+                <a href="Uber_step_3/src/" class="portfolio__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s" target="_blank">
                     <img src="img/works/uber.jpg" alt="uber">
                 </a>
-                <a href="https://puls0metr.000webhostapp.com/" target="_blank" class="portfolio__elem">
+                <a href="https://puls0metr.000webhostapp.com/" target="_blank" class="portfolio__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <img src="img/works/pulse.jpg" alt="pulse">
                 </a>
-                <a href="Project_1/src" class="portfolio__elem" target="_blank">
+                <a href="Project_1/src" class="portfolio__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s" target="_blank">
                     <img src="img/works/bread.jpg" alt="bread">
                 </a>
-                <a id="fourth" href="Guitarist-3/src/" class="portfolio__elem" target="_blank">
+                <a id="fourth" href="Guitarist-3/src/" class="portfolio__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s" target="_blank">
                     <img src="img/works/guitar.png" alt="plans">
                 </a>
-                <a href="" class="portfolio__elem" target="_blank">
+                <a href="" class="portfolio__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s" target="_blank">
                     <img src="img/works/ipad.jpg" alt="ipad">
                 </a>
-                <a id="sixth" href="First_HTML_CSS_Project/src/" class="portfolio__elem" target="_blank">
+                <a id="sixth" href="First_HTML_CSS_Project/src/" class="portfolio__elem wow animate__backInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.1s" target="_blank">
                     <img src="img/works/mac.jpg" alt="mac">
                 </a>
             </div>
@@ -447,38 +451,38 @@
 
     <!-- Price Section -->
     <section id="price-s" class="price ">
-        <div class="container">
-            <h2 class="title title_fz16 portfolio__title">Прайс-лист</h2>
+        <div class="container wow animate__fadeIn animate__animated">
+            <h2 class="title title_fz16 portfolio__title wow animate__jackInTheBox animate__animated">Прайс-лист</h2>
             <div class="divider"></div>
             <div class="price__wrapper">
 
-                <div class="price__elem">
+                <div class="price__elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="price__elem-name">Landing-page</div>
                     <div>от 1000 грн.</div>
                     <div class="price__elem-descr">Одностраничный сайт для презентации услуг/товаров/...</div>
                 </div>
-                <div class="price__elem">
+                <div class="price__elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.1s">
                     <div class="price__elem-name">Корпоративный сайт</div>
                     <div>от 5000 грн.</div>
                     <div class="price__elem-descr">Сайт для вашего бизнеса или компании</div>
                 </div>
-                <div class="price__elem">
+                <div class="price__elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.2s">
                     <div class="price__elem-name">Интернет-магазин</div>
                     <div>от 6000 грн.</div>
                     <div class="price__elem-descr">Инструмент для ваших продаж в сети</div>
                 </div>
 
-                <div class="price__elem">
+                <div class="price__elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.2s">
                     <div class="price__elem-name">Web-приложение</div>
                     <div>от 5300 грн.</div>
                     <div class="price__elem-descr">Приложение внутри браузера для лучшего комфорта</div>
                 </div>
-                <div class="price__elem">
+                <div class="price__elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.3s">
                     <div class="price__elem-name">Android/IOS Приложение</div>
                     <div>от 4800 грн.</div>
                     <div class="price__elem-descr">Приложение для смартфона любой ОС со всем функционалом</div>
                 </div>
-                <div class="price__elem">
+                <div class="price__elem wow animate__backInUp animate__animated" data-wow-duration="1s" data-wow-delay="0.3s">
                     <div class="price__elem-name">Дизайн</div>
                     <div>Индивидуально</div>
                     <div class="price__elem-descr">Создам дизайн для вашего сайта/приложения...</div>
@@ -489,28 +493,34 @@
 
     <!-- Contact me -->
     <section id="contact-s" class="contact">
-        <div class="container">
+        <div class="container wow animate__fadeIn animate__animated" data-wow-duration="1.5s">
             <div class="contact__wrapper">
-                <div class="contact__photo">
+                <div class="contact__photo wow animate__backInLeft animate__animated">
                     <img src="img/main_photo.jpg" alt="My photo">
                 </div>
-                <div class="contact__descr">
-                    <h2 class="title title_fz16 contact__circle">Контакты</h2>
-                    <div class="title title_fz36">Свяжжитесь со мной</div>
+                <div class="contact__descr wow animate__backInRight animate__animated">
+                    <h2 class="title title_fz16 contact__circle wow animate__jackInTheBox animate__animated" data-wow-delay="0.6s">Контакты</h2>
+                    <div class="title title_fz36 wow animate__zoomInDown animate__animated" data-wow-delay="0.6s">Свяжжитесь со мной</div>
                     <div class="divider"></div>
                     <p class="contact__text">
                         Любым удобным для вас способом:
                     </p>
                     <div class="contact__socials">
-                        <a class="contact__link" href="" target="_blank">
-                            <img src="icons/social/facebook.png" alt="">
-                        </a>
-                        <a class="contact__link" href="https://t.me/ladislaus_v" target="_blank">
-                            <img src="icons/social/telegram.png" alt="">
-                        </a>
-                        <a class="contact__link" href="" target="_blank">
-                            <img src="icons/social/instagram.png" alt="">
-                        </a>
+                        <div class="wow animate__bounce animate__animated" data-wow-delay="1.5s">
+                            <a class="contact__link" href="https://www.facebook.com/profile.php?id=100027122983561" target="_blank">
+                                <img src="icons/social/facebook.png" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="wow animate__bounce animate__animated" data-wow-delay="2s">
+                            <a class="contact__link" href="https://t.me/ladislaus_v" target="_blank">
+                                <img src="icons/social/telegram.png" alt="Telegram">
+                            </a>
+                        </div>
+                        <div class="wow animate__bounce animate__animated" data-wow-delay="2.5s">
+                            <a class="contact__link" href="https://www.instagram.com/ladislaus_v/" target="_blank">
+                                <img src="icons/social/instagram.png" alt="Instagram">
+                            </a>
+                        </div>
                     </div>
                         <p class="contact__text">
                             Или оставьте ваши данные и я сам вам напишу:

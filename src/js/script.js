@@ -15,7 +15,8 @@ $('#message-form').submit(function(e) {
 
 const humburger = document.querySelector('.humburger'),
       menu = document.querySelector(".menu"),
-      closeElem = document.querySelector(".menu__close");
+      closeElem = document.querySelector(".menu__close"),
+      element = document.querySelector('.scroll-bar');
 
 let links = document.getElementsByTagName('a');
 
@@ -48,5 +49,30 @@ percents.forEach((item, i) => {
 //     $('.scroll-bar').fadeOut();
 //   }
 // });
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 1100) {
+    //   $('.scroll-bar').fadeIn();
+    } else if ($(this).scrollTop() < 1100) {
+        // $('.scroll-bar').fadeOut();
+    }
+  });
+
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 1100) {
+        $('.scroll-bar').fadeIn();
+        element.addEventListener('click', () =>{
+        element.classList.add('animate__animated', 'animate__fadeOutUpBig');
+    })
+    } else if (($(this).scrollTop() == 0)) {
+        $('.scroll-bar').fadeOut();
+        element.classList.remove('animate__animated', 'animate__fadeOutUpBig');
+    }
+  });
+  
+//   element.classList.add('animate__animated', 'animate__backOutUp');
+//   element.addEventListener('click', () =>{
+//     element.classList.add('animate__animated', 'animate__backOutUp');
+// })
 
 new WOW().init();

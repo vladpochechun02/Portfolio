@@ -74,6 +74,7 @@
 	position: relative
 	background: url('../img/Frame.png') no-repeat 50%/cover
 	min-height: 100vh
+	overflow: hidden
 	&__title
 		margin-top: 10px
 		margin-bottom: 0
@@ -95,10 +96,12 @@
 		font-weight: 700
 		font-size: 14px
 		line-height: 21px
+		border: none
+		transition: 0.1s all
 		&:hover
-			animation-name: iam
-			animation-duration: 0.5s
-			animation-iteration-count: 1
+			// animation-name: iam
+			// animation-duration: 0.5s
+			// animation-iteration-count: 1
 			border: 2px solid black
 		&:first-child
 			&:hover
@@ -109,6 +112,7 @@
 	&__circle
 		padding-left: 10px
 		@include before__circle
+
 
 .humburger
 	position: absolute
@@ -220,7 +224,7 @@
 			transform: scale(1.2)
 	&__social
 		position: absolute
-		bottom: 50px
+		top: 90%
 		left: 50%
 		transform: translateX(-50%)
 		width: 90px
@@ -238,7 +242,8 @@
 
 .about
 	min-height: 600px
-	padding: 120px 0
+	padding-top: 120px
+	overflow: hidden
 	.divider
 		margin: 0
 	&__wrapper
@@ -293,7 +298,8 @@
 		color: #000000
 
 .resume
-	padding-bottom: 120px
+	padding-top: 120px
+	overflow: hidden
 	&__title
 		position: relative
 		text-align: center
@@ -372,7 +378,8 @@
 			font-size: 12px
 			line-height: 18px
 .skills
-	padding-bottom: 120px	
+	padding-top: 120px	
+	overflow: hidden
 	&__title
 		position: relative
 		text-align: center
@@ -446,7 +453,8 @@
 				background: $main-color
 
 .portfolio
-	padding-bottom: 120px
+	padding-top: 120px
+	overflow: hidden
 	&__title
 		position: relative
 		text-align: center
@@ -483,7 +491,8 @@
 		grid-row: 2/3 	
 
 .price
-	padding-bottom: 120px
+	padding-top: 120px
+	overflow: hidden
 	&__title
 		position: relative
 		text-align: center
@@ -528,7 +537,8 @@
 			line-height: 18px
 
 .contact
-	padding-bottom: 90px
+	padding: 120px 0
+	overflow: hidden
 	.divider
 		margin: 0
 	&__wrapper
@@ -551,6 +561,8 @@
 			margin-top: 0
 	&__socials
 		margin-top: 20px
+		div
+			display: inline-block
 	&__link
 		// display: block
 		text-decoration: none
@@ -653,3 +665,20 @@
 		margin-top: 10px
 	&__def
 		padding-left: 34px
+
+.scroll-bar
+	position: fixed
+	display: none
+	// position: absolute
+	right: 50px
+	bottom: 60px
+	height: 45px
+	width: 45px
+	border-radius: 100%
+	// border: 2px solid black
+	background: #fff
+	cursor: pointer
+	transition: 0.4s all
+	z-index: 10
+	&:hover
+		transform: scale(1.1)	
